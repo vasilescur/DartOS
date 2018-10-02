@@ -1,0 +1,11 @@
+# VSCode Files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# MacOS Files
+.DS_Store
+.AppleDouble
+.LSOverride
