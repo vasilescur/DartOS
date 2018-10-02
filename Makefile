@@ -1,3 +1,8 @@
+# Provides simple build process automation for the whole project.
+# To build, simply run `make`.
+
+# @author Radu Vasilescu <vasilescur@gmail.com>
+
 # Automatically generate lists of sources using wildcards.
 C_SOURCES = $(wildcard kernel/*.c drivers/*.c)
 HEADERS = $(wildcard kernel/*.h drivers/*.h)
