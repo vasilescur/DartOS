@@ -1,3 +1,8 @@
+; This file defines a Global Descriptor Table (GDT), a data structure used by Intel processors to define
+; the characteristics of the various memory areas used during program execution.
+
+; @author Radu Vasilescu <vasilescur@gmail.com>
+
 ; GDT
 gdt_start:
 
