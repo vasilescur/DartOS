@@ -1,3 +1,8 @@
+; This file defines an assembly routine that switches the processor from 16-bit Real 
+; Mode to 32-bit Protected Mode.
+
+; @author Radu Vasilescu <vasilescur@gmail.com>
+
 [bits 16]
 
 ; Switch to protected mode

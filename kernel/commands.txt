@@ -1,0 +1,3 @@
+ld -m elf_i386 -s -o kernel.bin -Ttext 0x1000 kernel_entry.o kernel.o --oformat binary
+gcc -m32 -fno-pie -ffreestanding -c kernel.c -o kernel.o
+nasm kernel_entry.asm -f elf32 -o kernel_entry.o

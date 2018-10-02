@@ -1,3 +1,8 @@
+; This file provides an assembly routine for loading a portion of data from the disk into memory.
+; We use this routine in the main boot sector program in order to load our kernel from disk.
+
+; @author Radu Vasilescu <vasilescur@gmail.com>
+
 [org 0x7c00]
 
 disk_load:

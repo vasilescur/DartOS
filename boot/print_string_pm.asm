@@ -1,3 +1,9 @@
+; This file defines an assembly routine for printing a string to the screen in 32-bit protected mode.
+; Since we cannot make BIOS calls in protected mode, we must write our own routine to write directly
+; to the video memory.
+
+; @author Radu Vasilescu <vasilescur@gmail.com>
+
 [bits 32]
 ; Define some constants
 VIDEO_MEMORY equ 0xb8000
