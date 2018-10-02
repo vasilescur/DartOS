@@ -1,10 +1,16 @@
-; A boot sector that boots a C kernel in 32-bit protected mode
+; A boot sector that boots a C kernel in 32-bit protected mode.
+; This is the main file that gets called when the computer turns on, and it is the first instruction
+; that gets executed by the CPU. This program loads a kernel from disk, switches from 16-bit Real Mode
+; to 32-bit Protected Mode, and then transfers execution to the kernel.
+
+; @author: Radu Vasilescu <vasilescur@gmail.com>
+
 [org 0x7c00]
 KERNEL_OFFSET equ 0x1000    ; Memory offset to load kernel
 
     mov [BOOT_DRIVE] , dl   ; BIOS stores boot drive in DL
 
-    mov bp, 0x9000      ; Set up stack
+    mov bp, 0x9000          ; Set up stack
     mov sp, bp
 
     mov bx, MSG_REAL_MODE   ; Announce startup
@@ -66,6 +72,3 @@ MSG_LOAD_KERNEL db "Loading kernel into memory.", 0
 ; Bootsector padding
 times 510-($-$$) db 0
 dw 0xaa55
-
-; QEMU is dumb, must give it exactly 16 sectors
-;times 16*256-($-$$) db 0
