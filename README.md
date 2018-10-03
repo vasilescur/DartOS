@@ -1,6 +1,7 @@
 # DartOS
+[![Build Status](https://travis-ci.com/vasilescur/DartOS.svg?branch=master)](https://travis-ci.com/vasilescur/DartOS)
 
-DartOS is a toy operating system supposedly built on Google's Dart language but actually built in assembly and C.
+DartOS is a my way of learning operating system development, by building an operating system and then replacing as much as possible of the kernel, drivers, etc., with [Dart](http://www.dartlang.org).
 
 ## Requirements
 
