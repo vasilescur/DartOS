@@ -1,14 +1,16 @@
-void print_x() {
-    // Create a pointer to a char, and point it to the first text cell
-    // of video memory
-
-    char* video_memory = (char*) 0xb8000;
-
-    // At the address pointed to by video_memory, store the character 'X'
-
-    *video_memory = 'X';
-}
+#include "../drivers/screen.h"\
 
 void main() {
-    print_x();
+    // Print welcome message
+    clear_screen();
+    println("Welcome to DartOS!");
+    println("");
+    
+    char* num = "0";
+
+    int i = 0;
+    for (i = 0; i < 5; i++) {
+        (*num)++;
+        println(num);
+    }
 }
