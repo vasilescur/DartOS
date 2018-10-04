@@ -137,6 +137,11 @@ void print(char* message) {
     print_at(message, -1, -1);
 }
 
+void print_ch(char message) {
+    char* msg = &message;
+    print(msg);
+}
+
 // Convenience function
 void println(char* message) {
     print(message);

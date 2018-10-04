@@ -15,6 +15,7 @@ int get_cursor();
 void set_cursor(int offset);
 void print_at(char* message, int col, int row);
 void print(char* message);
+void print_ch(char message);
 void println(char* message);
 void clear_screen();
 int get_screen_offset(int col, int row);

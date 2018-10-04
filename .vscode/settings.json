@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "screen.h": "c",
+        "low_level.h": "c",
+        "utils.h": "c",
+        "interrupts.h": "c",
+        "kernel.h": "c",
+        "keyboard_map.h": "c",
+        "keyboard.h": "c"
+    }
+}
